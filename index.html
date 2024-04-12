@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Board</title>
+    <link rel="stylesheet" href="./assets/styles.css">
+
+</head>
+<body>
+    <div class="board">
+        <div class="column" id="not-started-column">
+            <h2>Not Yet Started</h2>
+            <div id="not-started-tasks" class="task-list" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        </div>
+        <div class="column" id="in-progress-column">
+            <h2>In Progress</h2>
+            <div id="in-progress-tasks" class="task-list" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        </div>
+        <div class="column" id="completed-column">
+            <h2>Completed</h2>
+            <div id="completed-tasks" class="task-list" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        </div>
+    </div>
+
+    <button id="new-task-button" onclick="openModal()">Add New Task</button>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2>Add New Task</h2>
+            <form id="task-form">
+                <label for="title">Title:</label>
+                <input type="text" id="title" required><br><br>
+                <label for="description">Description:</label>
+                <textarea id="description" required></textarea><br><br>
+                <label for="deadline">Deadline:</label>
+                <input type="date" id="deadline" required><br><br>
+                <button type="submit">Save</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="./assets/script.js"></script>
+</body>
+</html>
