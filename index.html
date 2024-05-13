@@ -5,21 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Task Board</title>
     <link rel="stylesheet" href="./assets/styles.css">
-
 </head>
 <body>
-    <div class="board">
-        <div class="column" id="not-started-column">
-            <h2>Not Yet Started</h2>
-            <div id="not-started-tasks" class="task-list" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-        </div>
-        <div class="column" id="in-progress-column">
-            <h2>In Progress</h2>
-            <div id="in-progress-tasks" class="task-list" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-        </div>
-        <div class="column" id="completed-column">
-            <h2>Completed</h2>
-            <div id="completed-tasks" class="task-list" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <div id="task-container">
+        <div class="board">
+            <div class="column" id="not-started-column">
+                <h2>Not Yet Started</h2>
+                <div id="not-started-tasks" class="task-list" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            </div>
+            <div class="column" id="in-progress-column">
+                <h2>In Progress</h2>
+                <div id="in-progress-tasks" class="task-list" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            </div>
+            <div class="column" id="completed-column">
+                <h2>Completed</h2>
+                <div id="completed-tasks" class="task-list" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            </div>
         </div>
     </div>
 
@@ -43,4 +44,3 @@
 
     <script src="./assets/script.js"></script>
 </body>
-</html>

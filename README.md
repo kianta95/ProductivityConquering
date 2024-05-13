@@ -24,7 +24,7 @@ JavaScript
 Setup:
 
 Clone the repository:
-git clone https://github.com/your-username/task-board-challenge.git
+git clone https://github.com/kianta95/ProductivityConquering.git
 Open the project in your code editor
 Run the application in a web browser.
 
